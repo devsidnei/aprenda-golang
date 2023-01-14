@@ -9,7 +9,7 @@ type Customer struct {
 	DocumentnNr int64
 	Name        string
 	Code        int32
-	age         int `json:"age"`
+	Age         int
 	Address     Address
 	//phone      phone
 }
@@ -34,7 +34,7 @@ func main() {
 	cliente1.DocumentnNr = 8828926688
 	cliente1.Code = 73212
 	cliente1.Address.City = "Poços de Caldas"
-	cliente1.age = 36
+	cliente1.Age = 36
 
 	fmt.Printf("%+v\n", cliente1)
 
